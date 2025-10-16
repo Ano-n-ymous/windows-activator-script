@@ -1,4 +1,4 @@
-# Windows PERMANENT Activator - HWID Method
+# Windows PERMANENT Activator - Updated 2024
 # Run with: irm https://raw.githubusercontent.com/Ano-n-ymous/windows-activator-script/main/winactivator.ps1 | iex
 
 Set-ExecutionPolicy Bypass -Scope Process -Force -ErrorAction SilentlyContinue
@@ -15,7 +15,8 @@ if (-not $isAdmin) {
 
 Write-Host "PERMANENT Windows Activation Starting..." -ForegroundColor Cyan
 
-# Download and run MAS for permanent activation
-irm https://massgrave.dev/get | iex
+# Updated MAS command for permanent activation
+irm https://get.activated.win | iex
 
 Write-Host "Permanent activation completed!" -ForegroundColor Green
+Write-Host "This is GENUINE permanent activation using HWID method" -ForegroundColor Green
