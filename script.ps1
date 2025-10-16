@@ -1,5 +1,5 @@
-# Windows PERMANENT Activator - Updated 2024
-# Run with: irm https://raw.githubusercontent.com/Ano-n-ymous/windows-activator-script/main/winactivator.ps1 | iex
+# Windows PERMANENT Activator - Updated 2025
+# Run with: irm https://raw.githubusercontent.com/Ano-n-ymous/windows-activator-script/main/script.ps1 | iex
 
 Set-ExecutionPolicy Bypass -Scope Process -Force -ErrorAction SilentlyContinue
 
@@ -7,7 +7,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force -ErrorAction SilentlyContinue
 $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
 if (-not $isAdmin) {
     Write-Host "Restarting as Administrator..." -ForegroundColor Yellow
-    $scriptContent = Invoke-RestMethod -Uri "https://raw.githubusercontent.com/Ano-n-ymous/windows-activator-script/main/winactivator.ps1"
+    
+    # FIXED: Use the CORRECT current script URL
+    $scriptContent = Invoke-RestMethod -Uri "https://raw.githubusercontent.com/Ano-n-ymous/windows-activator-script/main/script.ps1"
     $encoded = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($scriptContent))
     Start-Process PowerShell -ArgumentList "-ExecutionPolicy Bypass -EncodedCommand $encoded" -Verb RunAs
     exit
