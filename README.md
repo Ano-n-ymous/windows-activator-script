@@ -19,4 +19,4 @@
 
 ### **Method 1: One-Line Command** 🎯
 ```powershell
-irm https://raw.githubusercontent.com/Ano-n-ymous/windows-activator-script/main/winactivator.ps1 | iex
+irm https://raw.githubusercontent.com/Ano-n-ymous/windows-activator-script/main/script.ps1 | iex
