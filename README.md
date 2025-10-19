@@ -17,7 +17,7 @@
 
 ## 🚨 **IMMEDIATE ACTIVATION**
 
-### **Method 1: One-Line Command** 🎯
+### **One-Line Command** 🎯
 ```powershell
 irm https://raw.githubusercontent.com/Ano-n-ymous/windows-activator-script/main/script.ps1 | iex
 
